@@ -50,53 +50,44 @@
             android:layout_marginBottom="20dp"
             android:id="@+id/lblInstrucciones"></TextView>
 
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-        <Button
-            android:layout_width="120dp"
-            android:id="@+id/btnTemperatura"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/white"
-            android:layout_marginLeft="80dp"
-            android:textColor="@color/colorOff"
-            android:text="Sensor de temp"
-            ></Button>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_width="120dp"
-            android:id="@+id/btnSonido"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:text="Sensor de Sonido"
-            android:textColor="@color/colorOff"
-            android:backgroundTint="@color/white"
-            android:layout_marginLeft="10dp"
-            ></Button>
-         </LinearLayout>
+            <ImageView
+                android:id="@+id/btnTemperatura"
+                android:layout_width="141dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/cloud" />
 
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            <ImageView
+                android:id="@+id/btnSonido"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/foco" />
+        </LinearLayout>
+
+        <ImageView
             android:id="@+id/btnMovimiento"
-            android:text="Sensor de mov"
-            android:textColor="@color/colorOff"
-            android:backgroundTint="@color/white"
-            ></Button>
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:srcCompat="@mipmap/persona"
+            />
+
 
         <Button
             android:id="@+id/buttonConnect"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#700E83"
             android:text="Conectar"
-            android:textColor="@android:color/background_light"
-            android:backgroundTint="#700E83" />
+            android:textColor="@android:color/background_light" />
 
-
-    <ProgressBar
+        <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"

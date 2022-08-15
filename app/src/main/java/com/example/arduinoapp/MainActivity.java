@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private String deviceName = null;
     private String deviceAddress;
     private Button btnExit;
-    private Button btnTemperatura, btnMovimiento, btnSonido, btnExitTemp, btnExitSonido, btnExitMovimiento;
+    private Button btnExitTemp, btnExitSonido, btnExitMovimiento;
+    private ImageView btnTemperatura, btnSonido, btnMovimiento;
     public int option = 0;
     public static Handler handler;
     public static BluetoothSocket mmSocket;
@@ -52,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
         // UI Initialization
         btnExit = (Button) findViewById(R.id.btnExit);
-        btnTemperatura = (Button) findViewById(R.id.btnTemperatura);
-        btnSonido = (Button) findViewById(R.id.btnSonido);
-        btnMovimiento = (Button) findViewById(R.id.btnMovimiento);
+        btnTemperatura = (ImageView) findViewById(R.id.btnTemperatura);
+        btnSonido = (ImageView) findViewById(R.id.btnSonido);
+        btnMovimiento = (ImageView) findViewById(R.id.btnMovimiento);
         btnExitTemp = (Button) findViewById(R.id.btnExitTemp);
         btnExitSonido = (Button) findViewById(R.id.btnExitSonido);
         btnExitMovimiento = (Button) findViewById(R.id.btnExitMovimiento);
