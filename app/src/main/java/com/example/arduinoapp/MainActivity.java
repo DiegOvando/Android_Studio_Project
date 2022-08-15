@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -52,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
         // UI Initialization
         btnExit = (Button) findViewById(R.id.btnExit);
-        btnTemperatura = (Button) findViewById(R.id.btnTemperatura);
-        btnSonido = (Button) findViewById(R.id.btnSonido);
-        btnMovimiento = (Button) findViewById(R.id.btnMovimiento);
+        //btnTemperatura = (Button) findViewById(R.id.btnTemperatura);
+        //btnSonido = (Button) findViewById(R.id.btnSonido);
+        //btnMovimiento = (Button) findViewById(R.id.btnMovimiento);
         btnExitTemp = (Button) findViewById(R.id.btnExitTemp);
         btnExitSonido = (Button) findViewById(R.id.btnExitSonido);
         btnExitMovimiento = (Button) findViewById(R.id.btnExitMovimiento);
@@ -91,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
             createConnectThread = new CreateConnectThread(bluetoothAdapter,deviceAddress);
             createConnectThread.start();
         }
+
+
 
         btnTemperatura.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -289,6 +292,21 @@ public class MainActivity extends AppCompatActivity {
                 confirmar.show();
             }
         });
+    }
+
+    //Metodo para el boton de temperatura
+    public void Temperatura(View view){
+        Toast.makeText(this, "Sensor de temperatura", Toast.LENGTH_SHORT).show();
+    }
+
+    //Metodo para el boton de sonido
+    public void Sonido(View view){
+        Toast.makeText(this, "Sensor de sonido", Toast.LENGTH_SHORT).show();
+    }
+
+    //Metodo para el boton de Movimiento
+    public void Movimiento(View view){
+        Toast.makeText(this, "Sensor de Movimiento", Toast.LENGTH_SHORT).show();
     }
 
     /* ============================ Thread to Create Bluetooth Connection =================================== */

@@ -50,41 +50,38 @@
             android:layout_marginBottom="20dp"
             android:id="@+id/lblInstrucciones"></TextView>
 
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-        <Button
-            android:layout_width="120dp"
-            android:id="@+id/btnTemperatura"
-            android:layout_height="120dp"
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/white"
-            android:layout_marginLeft="80dp"
-            android:textColor="@color/colorOff"
-            android:text="Sensor de temp"
-            ></Button>
+            android:layout_weight="1"
+            android:contentDescription="Cloud"
+            app:srcCompat="@mipmap/icloud" />
 
-        <Button
-            android:layout_width="120dp"
-            android:id="@+id/btnSonido"
-            android:layout_height="120dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
             android:layout_gravity="center"
-            android:text="Sensor de Sonido"
-            android:textColor="@color/colorOff"
-            android:backgroundTint="@color/white"
-            android:layout_marginLeft="10dp"
-            ></Button>
-         </LinearLayout>
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/btnMovimiento"
-            android:text="Sensor de mov"
-            android:textColor="@color/colorOff"
-            android:backgroundTint="@color/white"
-            ></Button>
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="55dp"
+                android:contentDescription="Foco"
+                app:srcCompat="@mipmap/foco" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:contentDescription="Persona"
+                app:srcCompat="@mipmap/persona" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/buttonConnect"
